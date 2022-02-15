@@ -45,3 +45,4 @@ class NeduController extends Controller
       return redirect("/nedu");
     }
 }
+ // https://my-logistic-app.herokuapp.com/ | https://git.heroku.com/my-logistic-app.git
