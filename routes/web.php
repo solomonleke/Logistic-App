@@ -30,11 +30,12 @@ Route::match(['get','post'], '/track-parcel', [LogicController::class, 'track_pa
 
 Route::match(['get','post'], '/blog-readmore', [LogicController::class, 'readMore_blog']);
 
+Route::match(['get','post'], '/sign-up', [AdminController::class, 'sign_up']);
+Route::match(['get','post'], '/login', [AdminController::class, 'login']);
 Route::group(['middleware'=>"trans"], function(){
 
 Route::match(['get','post'], '/dashboard', [AdminController::class, 'dashboard']);
-Route::match(['get','post'], '/sign-up', [AdminController::class, 'sign_up']);
-Route::match(['get','post'], '/login', [AdminController::class, 'login']);
+
 Route::match(['get','post'], '/order-admin', [AdminController::class, 'order']);
 Route::match(['get','post'], '/about-admin', [AdminController::class, 'about_admin']);
 Route::match(['get','post'], '/settings', [AdminController::class, 'settings']);
