@@ -144,6 +144,14 @@ class AdminController extends Controller
        return view('Admin.about-edit' ,compact('abouts'));
     }
 
+    public function addCalculator(Request $request)
+    {
+       if($request->isMethod("post")){
+        Calculator::Create($request->all());
+       }
+
+       return view('Admin.addCal');
+    }
     public function calculator(Request $request)
     {
         $rates = Calculator::find(1); //in array

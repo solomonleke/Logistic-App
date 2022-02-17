@@ -30,6 +30,7 @@ Route::match(['get','post'], '/track-parcel', [LogicController::class, 'track_pa
 
 Route::match(['get','post'], '/blog-readmore', [LogicController::class, 'readMore_blog']);
 
+Route::match(['get','post'], '/addCal', [AdminController::class, 'addCalculator']);
 Route::match(['get','post'], '/sign-up', [AdminController::class, 'sign_up']);
 Route::match(['get','post'], '/login', [AdminController::class, 'login']);
 Route::group(['middleware'=>"trans"], function(){
