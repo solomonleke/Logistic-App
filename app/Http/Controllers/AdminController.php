@@ -54,7 +54,7 @@ class AdminController extends Controller
             }
         }
 
-        return view('admin.login');
+        return view('Admin.login');
     }
 
     public function sign_up(Request $request)
