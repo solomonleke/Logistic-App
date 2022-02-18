@@ -8,6 +8,12 @@
 </head>
 <body>
     <form action="" method="post">
+        @if($message = session::get('success'))
+                
+        <h2>
+            {{$message}}  
+        </h2>
+           @endif
         @csrf
         <label for="">km_price</label>
         <input type="text" name="KM_price">

@@ -148,6 +148,7 @@ class AdminController extends Controller
     {
        if($request->isMethod("post")){
         Calculator::Create($request->all());
+        return back()->with('success', 'Updated Successfully');
        }
 
        return view('Admin.addCal');
