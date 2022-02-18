@@ -15,8 +15,8 @@ class CreateCalculatorsTable extends Migration
     {
         Schema::create('calculators', function (Blueprint $table) {
             $table->id();
-            $table->string('KM-price');
-            $table->string('KG-price');
+            $table->string('KM_price');
+            $table->string('KG_price');
             $table->timestamps();
         });
     }
