@@ -148,7 +148,7 @@ class AdminController extends Controller
     {
        if($request->isMethod("post")){
         $check = Calculator::Create($request->all());
-
+      
         if($check){
             return back()->with('success', 'Updated Successfully');
         }
