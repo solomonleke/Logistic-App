@@ -9,8 +9,8 @@ class Calculator extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'KM_price',
-        'KG_price',
+        'KM-price',
+        'KG-price',
         'air_fright',
         'road_fright',
         'ocean_fright'
