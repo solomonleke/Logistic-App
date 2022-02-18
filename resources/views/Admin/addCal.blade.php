@@ -10,9 +10,9 @@
     <form action="" method="post">
         @csrf
         <label for="">km_price</label>
-        <input type="text" name="KM-price">
+        <input type="text" name="KM_price">
         <label for="">kg_price</label>
-        <input type="text" name="KG-price">
+        <input type="text" name="KG_price">
         <label for="">air Fright</label>
         <input type="text" name="air_fright">
         <label for="">road Fright</label>
