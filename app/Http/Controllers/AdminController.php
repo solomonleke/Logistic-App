@@ -151,6 +151,8 @@ class AdminController extends Controller
       
         if($check){
             return back()->with('success', 'Updated Successfully');
+        }else{
+            return back()->with('success', 'Something went wrong');
         }
         
        }

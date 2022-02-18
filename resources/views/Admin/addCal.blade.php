@@ -7,7 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-  
+    @if($message = session::get('success'))
+                
+    <h2>
+        {{$message}}  
+    </h2>
+       @endif
     <form action="" method="post">
       
         @csrf
