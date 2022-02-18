@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    @if($message = session::get('success'))
+    @if($message = Session::get('success'))
                 
     <h2>
         {{$message}}  
