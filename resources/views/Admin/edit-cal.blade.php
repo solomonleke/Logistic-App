@@ -227,7 +227,7 @@
                        
                         <td>1</td>
                         <td><div class="center"><i class="fas fa-arrows-alt-h arrow"></i></div></td>
-                        <td><input name="KM_price" value="{{$data['KM_price']}}" type="number"></td>
+                        <td><input name="KM-price" value="{{$data['KM-price']}}" type="number"></td>
                         
                       </tr>
                
@@ -246,7 +246,7 @@
                          
                           <td>1</td>
                           <td><div class="center"><i class="fas fa-arrows-alt-h arrow"></i></div></td>
-                          <td><input name="KG_price" value="{{$data['KG_price']}}" type="number"></td>
+                          <td><input name="KG-price" value="{{$data['KG-price']}}" type="number"></td>
                          
                         </tr>
                  
