@@ -202,7 +202,7 @@
                   <h1 class="card-title">Regulator</h1>
                 </div>
                <div class="flash">
-                @if($message = session::get('success'))
+                @if($message = Session::get('success'))
                 
                 <h2>
                     {{$message}}  
