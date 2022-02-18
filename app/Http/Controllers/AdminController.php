@@ -164,8 +164,8 @@ class AdminController extends Controller
         if ($request->action == 'edit') {
             if ($request->isMethod('post')) {
                 $request->validate([
-                    'KM_price' => 'required',
-                    'KG_price' => 'required',
+                    'KM-price' => 'required',
+                    'KG-price' => 'required',
                     'air_fright' => 'required',
                     'road_fright' => 'required',
                     'ocean_fright' => 'required',
@@ -173,7 +173,7 @@ class AdminController extends Controller
     
                 
     
-             Calculator::where(['id' => 1])->update(['KG_price' => $request->KG_price, 'KM_price' => $request->KM_price,
+             Calculator::where(['id' => 1])->update(['KG-price' => $request->KG_price, 'KM_price' => $request->KM_price,
             'air_fright' => $request->air_fright, 'ocean_fright' => $request->ocean_fright,'road_fright' => $request->road_fright]);
     
                

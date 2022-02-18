@@ -219,7 +219,7 @@
            
             <td>1</td>
             <td><div class="center"><i class="fas fa-arrows-alt-h arrow"></i></div></td>
-            <td>N{{$rates['KM_price']}}</td>
+            <td>N{{$rates['KM-price']}}</td>
             
           </tr>
    
@@ -238,7 +238,7 @@
              
               <td>1</td>
               <td><div class="center"><i class="fas fa-arrows-alt-h arrow"></i></div></td>
-              <td>N{{$rates['KG_price']}}</td>
+              <td>N{{$rates['KG-price']}}</td>
              
             </tr>
      
