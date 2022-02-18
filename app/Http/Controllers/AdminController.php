@@ -164,8 +164,8 @@ class AdminController extends Controller
         if ($request->action == 'edit') {
             if ($request->isMethod('post')) {
                 $request->validate([
-                    'KM-price' => 'required',
-                    'KG-price' => 'required',
+                    'KM_price' => 'required',
+                    'KG_price' => 'required',
                     'air_fright' => 'required',
                     'road_fright' => 'required',
                     'ocean_fright' => 'required',
