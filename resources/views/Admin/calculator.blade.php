@@ -238,8 +238,9 @@
              
               <td>1</td>
               <td><div class="center"><i class="fas fa-arrows-alt-h arrow"></i></div></td>
+              @if($rates !== null)
               <td>N{{$rates['KG_price']}}</td>
-             
+               @endif 
             </tr>
      
   
