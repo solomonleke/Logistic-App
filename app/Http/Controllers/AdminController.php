@@ -147,8 +147,8 @@ class AdminController extends Controller
     public function addCalculator(Request $request)
     {
        if($request->isMethod("post")){
-        $find = Calculator::find(1)->count();  
-        if ($find == 1){
+        $find = Calculator::find(1);  
+        if ($find){
             $check =  Calculator::where(['id' => 1])->update(['KG_price' => $request->KG_price, 'KM_price' => $request->KM_price,
             'air_fright' => $request->air_fright, 'ocean_fright' => $request->ocean_fright,'road_fright' => $request->road_fright]);
         }else{
