@@ -23,6 +23,9 @@ class CreateOrdersTable extends Migration
             $table->integer('distance');
             $table->integer('weight');
             $table->string('carrier');
+            $table->string('status')->nullable();
+            $table->string('total')->nullable();
+            $table->string('tracking_id')->nullable();
             $table->timestamps();
         });
     }
