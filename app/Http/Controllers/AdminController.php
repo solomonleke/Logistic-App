@@ -147,7 +147,13 @@ class AdminController extends Controller
     public function addCalculator(Request $request)
     {
        if($request->isMethod("post")){
-        $check = Calculator::Create($request->all());
+        $find = Calculator::find(1)->count();  
+        if ($find == 1){
+            $check =  Calculator::where(['id' => 1])->update(['KG_price' => $request->KG_price, 'KM_price' => $request->KM_price,
+            'air_fright' => $request->air_fright, 'ocean_fright' => $request->ocean_fright,'road_fright' => $request->road_fright]);
+        }else{
+            $check = Calculator::Create($request->all());
+        }
       
         if($check){
             return back()->with('success', 'Updated Successfully');
@@ -161,7 +167,7 @@ class AdminController extends Controller
     }
     public function calculator(Request $request)
     {
-        $rates = Calculator::find(2); //in array
+        $rates = Calculator::find(1); //in array
         // $rates = Calculator::all(); //in array
         // dd($rates);
 
@@ -182,7 +188,7 @@ class AdminController extends Controller
     
                 
     
-             Calculator::where(['id' => 2])->update(['KG_price' => $request->KG_price, 'KM_price' => $request->KM_price,
+             Calculator::where(['id' => 1])->update(['KG_price' => $request->KG_price, 'KM_price' => $request->KM_price,
             'air_fright' => $request->air_fright, 'ocean_fright' => $request->ocean_fright,'road_fright' => $request->road_fright]);
     
                
