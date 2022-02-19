@@ -161,7 +161,9 @@ class AdminController extends Controller
     }
     public function calculator(Request $request)
     {
-        $rates = Calculator::find(7); //in array
+        // $rates = Calculator::find(1); //in array
+        $rates = Calculator::all(); //in array
+        dd($rates);
 
        return view('Admin.calculator', compact('rates'));
     }
