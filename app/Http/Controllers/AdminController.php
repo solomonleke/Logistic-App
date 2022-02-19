@@ -122,6 +122,28 @@ class AdminController extends Controller
 
        return view('Admin.about-admin', compact('aboutUs'));
     }
+    public function addAbout(Request $request)
+    {
+       if($request->isMethod("post")){
+        $find = About::find(1);  
+        if ($find){
+            $check =  About::where(['id' => 1])->update(['about' => $request->about]);
+        }else{
+            $check = About::Create($request->all());
+        }
+
+        
+      
+        if($check){
+            return back()->with('success', 'Updated Successfully');
+        }else{
+            return back()->with('success', 'Something went wrong');
+        }
+        
+       }
+
+       return view('Admin.addAbout');
+    }
 
     public function settings(Request $request)
     {
