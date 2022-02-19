@@ -14,8 +14,8 @@ class AddTrackingToOrdersTable extends Migration
     public function up()
     {
         Schema::table('orders', function (Blueprint $table) {
-            $table->string('tracking_id');
-            $table->string('total');
+            $table->string('tracking_id')->nullable();
+            $table->string('total')->nullable();
         });
     }
 
