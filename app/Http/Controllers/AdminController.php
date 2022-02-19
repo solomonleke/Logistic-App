@@ -155,7 +155,7 @@ class AdminController extends Controller
             $check = Calculator::Create($request->all());
         }
 
-        dd(Calculator::all());
+        
       
         if($check){
             return back()->with('success', 'Updated Successfully');
